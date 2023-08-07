@@ -6,12 +6,18 @@ manifest:
       url-base: https://github.com/zephyrproject-rtos
     - name: nrfconnect
       url-base: http://github.com/nrfconnect
+    - name: u-blox
+      url-base: http://github.com/u-blox
   projects:
     - name: zephyr
       remote: zephyrproject-rtos
-      revision: v3.4.0
+      revision: main
       clone-depth: 1
       import: true
+    - name: ubxlib
+      remote: u-blox
+      revision: v1.2.0
+      clone-depth: 1
     # - name: nrf
     #   repo-path: sdk-nrf
     #   path: nrf
